@@ -1,0 +1,45 @@
+:root{
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --text-color:#333;
+}
+
+*{
+    /* kế thừa */
+    box-sizing: inherit;
+}
+
+html{
+    /* kế thừa từ * */
+    box-sizing: border-box;
+    /* mặc định font-size = 16px */
+    font-size: 62.5%;
+     /*Chiều cao chữ mặc định  */
+    line-height: 1.6rem;
+    /* font chữ mặc định cho website */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* nền móng cho reponsive */
+.grid{
+    /* kích thước */
+    width: 1200px;
+    /* kích thước tối đa */
+    max-width: 100%;
+    /* căn giữa */
+    margin: 0 auto;
+
+}
+
+.grid__full-width{
+    /* chiều rộng 100% */
+    width: 100%;
+}
+
+.grid__row{
+    /* những thằng được chứa trong class này sẽ nằm ngang */
+    display: flex;
+    flex-wrap: wrap;
+}
+
