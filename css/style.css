@@ -33,6 +33,8 @@
     margin: 0 8px;
     /*Trên dưới = 0 ,trái phải = 8px*/
     position: relative;
+    /* độ cao tối thiểu */
+    min-height: 26px;
 }
 
 /* set font chữ cho phần header */
@@ -51,8 +53,17 @@
     /* căn chỉnh độ dày của chữ */
     font-weight: 300;
 }
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+
 /* hover chữ để cho mờ */
 .header__navbar-item:hover,
+.header__navbar-icon-link:hover,
 .header__navbar-item-link:hover{
     /* trỏ bàn tay khi hover */
     cursor: pointer;
@@ -80,3 +91,20 @@
     transform: translateY(-50%);
 }
 
+/* icons */
+.header__navbar-icon-link{
+    /* màu icons */
+    color:var(--white-color);
+    /* bỏ gạch chân */
+    text-decoration:none;
+}
+
+.header__navbar-icon{
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+.header__navbar-title--no-pointer{
+    cursor: text;
+    color: var(--white-color);
+}
